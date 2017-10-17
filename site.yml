@@ -1,0 +1,3 @@
+---
+- include: HPiLo_boot.yml
+- include: HPiLo_facts.yml

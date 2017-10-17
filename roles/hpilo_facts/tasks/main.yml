@@ -1,0 +1,15 @@
+---
+- hpilo_facts:
+    host: "{{ iLo_IP }}"
+    login: "{{ iLo_username }}"
+    password: "{{ iLo_password }}"
+  delegate_to: localhost
+
+- debug: var=hw_bios_version
+- debug: var=hw_product_name
+- debug: var=hw_bios_date
+- debug: var=hw_ethX
+- debug: var=hw_system_serial
+- debug: var=hw_eth_ilo
+- debug: var=hw_uuid
+- debug: var=hw_product_uuid
