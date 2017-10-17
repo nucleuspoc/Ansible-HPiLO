@@ -38,7 +38,8 @@ $ pip list
 ```
 We are looking for "python-hpilo(version #)"
 
-Before going any further, I received help from the Ansible Module website: - http://docs.ansible.com/ansible/latest/hpilo_facts_module.html
+Before going any further, I received help from the Ansible Module website:
+- http://docs.ansible.com/ansible/latest/hpilo_facts_module.html
 - http://docs.ansible.com/ansible/latest/hpilo_boot_module.html
 
 The 3 playbooks on this page do not have alot of functionality however are key! If you are going to want to run the below playbooks, then its these high level YAML files that are required to be executed:
