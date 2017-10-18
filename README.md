@@ -43,14 +43,14 @@ Before going any further, I received help from the Ansible Module website:
 - http://docs.ansible.com/ansible/latest/hpilo_boot_module.html
 
 The 3 playbooks on this page do not have alot of functionality however are key! If you are going to want to run the below playbooks, then its these high level YAML files that are required to be executed:
-- [HPiLo_boot.yml](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/HPiLo_boot.yml): This is to execute the hpilo_boot tasks in 'roles'
-- [HPiLo_facts.yml](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/HPiLo_facts.yml): This is to execute the hpilo_facts tasks in 'roles'
-- [site.yml](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/site.yml): Will play everything!
+- [HPiLo_boot.yml](../master/HPiLo_boot.yml): This is to execute the hpilo_boot tasks in 'roles'
+- [HPiLo_facts.yml](../master/HPiLo_facts.yml): This is to execute the hpilo_facts tasks in 'roles'
+- [site.yml](../master/site.yml): Will play everything!
 These 3 are key as they specify the hosts for each 'role'
 
 ## hpilo_facts
 ### Task playbook
-[Ansible YAML file](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/roles/hpilo_facts/tasks/main.yml)
+[Ansible YAML file](../master/roles/hpilo_facts/tasks/main.yml)
 ```yaml
 ---
 - hpilo_facts:
@@ -70,7 +70,7 @@ These 3 are key as they specify the hosts for each 'role'
 ```
 ### Variable playbook
 This will need editing based on your iLO information
-[Ansible YAML file](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/roles/hpilo_facts/vars/main.yml)
+[Ansible YAML file](../master/roles/hpilo_facts/vars/main.yml)
 ```yaml
 ---
 iLo_IP: '0.0.0.0'
@@ -80,7 +80,7 @@ iLo_password: 'PASSWORD'
 
 ## hpilo_boot
 ### Task playbook
-[Ansible YAML file](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/roles/hpilo_boot/tasks/main.yml)
+[Ansible YAML file](../master/roles/hpilo_boot/tasks/main.yml)
 ```yaml
 ---    
 - name: Boot the system with an ISO
@@ -102,7 +102,7 @@ iLo_password: 'PASSWORD'
 ```
 ### Variable playbook
 This will need editing based on your iLO information
-[Ansible YAML file](https://github.com/nucleuspoc/Ansible-HPiLO/blob/master/roles/hpilo_boot/vars/main.yml)
+[Ansible YAML file](../master/roles/hpilo_boot/vars/main.yml)
 ```yaml
 ---
 iLo_IP: '0.0.0.0'
